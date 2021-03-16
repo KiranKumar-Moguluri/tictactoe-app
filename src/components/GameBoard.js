@@ -32,7 +32,7 @@ const GameBoard = () => {
                 setmoves(move_count);
             }
             
-            if(moves===9){
+            if(moves===8){
                 alert('Drawn!');
                 setgameState(emptyGame)
                 setmoves(0);
@@ -69,10 +69,10 @@ const GameBoard = () => {
         else if(gameState[6].value===gameState[7].value && gameState[6].value===gameState[8].value){
             win=gameState[6].value;
         }
-        else{
-                 alert('Drawn!');
+        // else{
+        //          alert('Drawn! case 2');
                
-        }
+        // }
         
         
 
